@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deploy
+ date="2026.04.19.10:59:37"
+ outputDirectory="/home/b10504072/QSFP_JTAG/In_System_Sources_and_Probes/">
+ <perimeter>
+  <parameter
+     name="AUTO_GENERATION_ID"
+     type="Integer"
+     defaultValue="0"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_UNIQUE_ID"
+     type="String"
+     defaultValue=""
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_FAMILY"
+     type="String"
+     defaultValue="Arria 10"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE"
+     type="String"
+     defaultValue="10AX115N2F45E1SG"
+     onHdl="0"
+     affectsHdl="1" />
+  <parameter
+     name="AUTO_DEVICE_SPEEDGRADE"
+     type="String"
+     defaultValue="1"
+     onHdl="0"
+     affectsHdl="1" />
+  <interface name="probes" kind="conduit" start="0">
+   <property name="associatedClock" value="" />
+   <property name="associatedReset" value="" />
+   <port name="probe" direction="input" role="probe" width="64" />
+  </interface>
+ </perimeter>
+ <entity
+   kind="In_System_Sources_and_Probes"
+   version="1.0"
+   name="In_System_Sources_and_Probes">
+  <parameter name="AUTO_GENERATION_ID" value="1776567577" />
+  <parameter name="AUTO_DEVICE" value="10AX115N2F45E1SG" />
+  <parameter name="AUTO_DEVICE_FAMILY" value="Arria 10" />
+  <parameter name="AUTO_UNIQUE_ID" value="" />
+  <parameter name="AUTO_DEVICE_SPEEDGRADE" value="1" />
+  <generatedFiles>
+   <file
+       path="/home/b10504072/QSFP_JTAG/In_System_Sources_and_Probes/synth/In_System_Sources_and_Probes.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="/home/b10504072/QSFP_JTAG/In_System_Sources_and_Probes/synth/In_System_Sources_and_Probes_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/b10504072/QSFP_JTAG/In_System_Sources_and_Probes/synth/In_System_Sources_and_Probes.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+   <file
+       path="/home/b10504072/QSFP_JTAG/In_System_Sources_and_Probes/synth/In_System_Sources_and_Probes_cfg.v"
+       attributes="CONTAINS_INLINE_CONFIGURATION" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file path="/home/b10504072/QSFP_JTAG/In_System_Sources_and_Probes.qsys" />
+  </sourceFiles>
+  <childSourceFiles>
+   <file
+       path="/mnt/ds1515/opt/intelFPGA/17.0/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </childSourceFiles>
+  <messages>
+   <message level="Info" culprit="In_System_Sources_and_Probes">"Generating: In_System_Sources_and_Probes"</message>
+   <message level="Info" culprit="In_System_Sources_and_Probes">"Generating: altsource_probe_top"</message>
+  </messages>
+ </entity>
+ <entity
+   kind="altera_in_system_sources_probes"
+   version="17.0"
+   name="altsource_probe_top">
+  <parameter name="create_source_clock" value="false" />
+  <parameter name="instance_id" value="NONE" />
+  <parameter name="source_initial_value" value="0" />
+  <parameter name="sld_auto_instance_index" value="YES" />
+  <parameter name="sld_instance_index" value="0" />
+  <parameter name="probe_width" value="64" />
+  <parameter name="source_width" value="0" />
+  <parameter name="create_source_clock_enable" value="false" />
+  <parameter name="device_family" value="Arria 10" />
+  <parameter name="enable_metastability" value="NO" />
+  <parameter name="gui_use_auto_index" value="true" />
+  <generatedFiles>
+   <file
+       path="/home/b10504072/QSFP_JTAG/In_System_Sources_and_Probes/altera_in_system_sources_probes_170/synth/altsource_probe_top.v"
+       attributes="" />
+  </generatedFiles>
+  <childGeneratedFiles>
+   <file
+       path="/home/b10504072/QSFP_JTAG/In_System_Sources_and_Probes/altera_in_system_sources_probes_170/synth/altsource_probe_top.v"
+       attributes="" />
+  </childGeneratedFiles>
+  <sourceFiles>
+   <file
+       path="/mnt/ds1515/opt/intelFPGA/17.0/ip/altera/sld/jtag/altera_in_system_sources_probes/altera_in_system_sources_probes_hw.tcl" />
+  </sourceFiles>
+  <childSourceFiles/>
+  <instantiator
+     instantiator="In_System_Sources_and_Probes"
+     as="in_system_sources_probes_0" />
+  <messages>
+   <message level="Info" culprit="In_System_Sources_and_Probes">"Generating: altsource_probe_top"</message>
+  </messages>
+ </entity>
+</deploy>

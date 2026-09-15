@@ -1,0 +1,11 @@
+	component In_System_Sources_and_Probes is
+		port (
+			probe : in std_logic_vector(63 downto 0) := (others => 'X')  -- probe
+		);
+	end component In_System_Sources_and_Probes;
+
+	u0 : component In_System_Sources_and_Probes
+		port map (
+			probe => CONNECTED_TO_probe  -- probes.probe
+		);
+

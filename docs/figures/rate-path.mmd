@@ -1,0 +1,13 @@
+flowchart LR
+  A["Si5340A<br/>50 MHz control / I2C"] --> B["QSFP reference<br/>644.53125 MHz"]
+  B --> C["ATX PLL<br/>5156.25 MHz"]
+  C --> D["Native PHY<br/>DDR serializer"]
+  D --> E["QSFP+ lane 0<br/>10.3125 Gb/s"]
+  D --> F["QSFP+ lane 1<br/>10.3125 Gb/s"]
+  D --> G["QSFP+ lane 2<br/>10.3125 Gb/s"]
+  D --> H["QSFP+ lane 3<br/>10.3125 Gb/s"]
+  E --> I["RX CDR / deserializer<br/>64-bit parallel"]
+  F --> I
+  G --> I
+  H --> I
+  I --> J["~161 MHz x 64 bits x 4 lanes<br/>documented parallel datapath"]

@@ -1,0 +1,55 @@
+# Local staging and editor files
+_staging/
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+__pycache__/
+
+# Quartus generated databases and caches
+src/quartus/**/db/
+src/quartus/**/incremental_db/
+src/quartus/**/.qsys_edit/
+src/quartus/**/synth/
+src/quartus/**/simulation/
+src/quartus/**/output_files/
+
+# Quartus generated reports and intermediate files
+src/quartus/**/*.rpt
+src/quartus/**/*.summary
+src/quartus/**/*.smsg
+src/quartus/**/*.qmsg
+src/quartus/**/*.log
+src/quartus/**/*.logdb
+src/quartus/**/*.cdb
+src/quartus/**/*.hdb
+src/quartus/**/*.rdb
+src/quartus/**/*.ammdb
+src/quartus/**/*.qicache
+src/quartus/**/*.debuginfo
+src/quartus/**/*.kpt
+src/quartus/**/*.bpm
+src/quartus/**/*.dpi
+src/quartus/**/*.dfp
+src/quartus/**/*.nlv
+src/quartus/**/*.hsd
+src/quartus/**/*.qws
+src/quartus/**/*.htm
+src/quartus/**/*.html
+src/quartus/**/*.pin
+src/quartus/**/*.jdi
+src/quartus/**/*.cdf
+src/quartus/**/*.done
+src/quartus/**/*.map
+src/quartus/**/*.fit
+src/quartus/**/*.flow
+src/quartus/**/*.asm
+src/quartus/**/*.ppf
+src/quartus/**/*.tdf
+src/quartus/**/*.qns
+
+# Keep .sof and .stp because they are deployment/debug deliverables.
+# Keep .qpf/.qsf/.qsys/.sdc/.v/.sv/.vhd/.qip/.tcl/.sopcinfo as project inputs.
