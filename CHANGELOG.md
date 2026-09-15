@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-09-16 - Add debug quick reference
+
+- README 新增 Q01～Q10 debug 問題／解法速查，涵蓋同步、速率、Enhanced PCS FIFO、latency、cable delay、lane skew、四 port、JTAG、P2P/VFIO 與 Git LFS。
+
 ## 2026-09-15 - Initial project consolidation
 
 - 建立 02_QSFP_git 本機專案目錄。
